@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/branding/metis.svg'
 import logoText from '../../assets/branding/metisText.svg'
 import $ from 'jquery';
@@ -102,24 +103,24 @@ class Navbar extends Component {
       <NavbarWrapper>
         <NavbarMain id={'navbarMain'}>
           <NavbarBrand>
-            <img className={'navbar-brand-logo'} src={logo} />
-            <img className={'navbar-brand-text'} src={logoText} />
+            <img className={'navbar-brand-logo'} alt="" src={logo} />
+            <img className={'navbar-brand-text'} alt="" src={logoText} />
           </NavbarBrand>
           <NavbarLinks>
             <NavbarLink>
-              <a href="/account">{`My Account`}</a>
+              <Link to="/account">{`My Account`}</Link>
             </NavbarLink>
             <NavbarLink>
-              <a href="/browse-subscriptions">{`Add Subscription`}</a>
+              <Link to="/browse">{`Add Subscription`}</Link>
             </NavbarLink>
             <NavbarLink>
-              <a href="/billing">{`Billing History`}</a>
+              <Link to="/billing">{`Billing History`}</Link>
             </NavbarLink>
             <NavbarLink>
-              <a href="/about">{`About`}</a>
+              <Link to="/about">{`About`}</Link>
             </NavbarLink>
             <NavbarLink>
-              <a href="/logout">{`Logout`}</a>
+              <Link to="/logout">{`Logout`}</Link>
             </NavbarLink>
           </NavbarLinks>
         </NavbarMain>
