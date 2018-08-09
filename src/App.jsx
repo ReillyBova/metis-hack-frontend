@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { Navbar } from './components'
+import { Navbar } from 'components'
 
 const AccountPage = () => {return(<p>accounts</p>)}
 const SubscriptionBrowserPage = () => {return(<p>browse</p>)}

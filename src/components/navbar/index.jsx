@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import logo from '../../assets/branding/metis.svg'
-import logoText from '../../assets/branding/metisText.svg'
+import logo from 'assets/branding/metis.svg'
+import logoText from 'assets/branding/metisText.svg'
 import $ from 'jquery';
 
 const NavbarWrapper = styled.header`
@@ -102,10 +102,12 @@ class Navbar extends Component {
     return (
       <NavbarWrapper>
         <NavbarMain id={'navbarMain'}>
-          <NavbarBrand>
-            <img className={'navbar-brand-logo'} alt="" src={logo} />
-            <img className={'navbar-brand-text'} alt="" src={logoText} />
-          </NavbarBrand>
+          <Link to={`${process.env.PUBLIC_URL}/`}>
+            <NavbarBrand>
+              <img className={'navbar-brand-logo'} alt="" src={logo} />
+              <img className={'navbar-brand-text'} alt="" src={logoText} />
+            </NavbarBrand>
+          </Link>
           <NavbarLinks>
             <NavbarLink>
               <Link to={`${process.env.PUBLIC_URL}/account`}>{`My Account`}</Link>
