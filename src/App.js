@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { Navbar } from 'components'
+import { AccountPage } from 'pages'
 
-const AccountPage = () => {return(<p>accounts</p>)}
 const SubscriptionBrowserPage = () => {return(<p>browse</p>)}
 const BillingPage = () => {return(<p>billing</p>)}
 const AboutPage = () => {return(<p>about</p>)}

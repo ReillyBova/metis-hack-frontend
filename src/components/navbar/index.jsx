@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import logo from 'assets/branding/metis.svg'
-import logoText from 'assets/branding/metisText.svg'
+import { logo, logoText } from 'assets/images'
+import { theme } from 'assets/theme'
 import $ from 'jquery';
 
 const NavbarWrapper = styled.header`
 width: 100%;
 height: 120px;
-position: sticky;
+position: fixed;
 top: 0;
 z-index: 15;
 `
@@ -74,21 +74,21 @@ flex-flow: row wrap;
 align-items: center;
 display:flex;
 align-content: center;
-border-bottom: 3px solid #7600d9;
+border-bottom: 3px solid ${theme.purple};
 `
 const NavbarLink = styled.div`
 margin: 4px 12px;
 border-bottom: 1px solid transparent;
 
 &:hover {
-  border-bottom: 1px solid #7600d9;
+  border-bottom: 1px solid ${theme.purple};
 }
 `
 
 class Navbar extends Component {
 
   scroll_navbar = () => {
-    if ($(document).scrollTop() > 50) {
+    if ($(document).scrollTop() > 115) {
       $('#navbarMain').addClass('mini');
     } else {
       $('#navbarMain').removeClass('mini');
