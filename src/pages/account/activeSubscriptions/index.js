@@ -1,1 +1,1 @@
-export { default as ActiveSubscriptions } from './active-subscriptions'
+export { default as ActiveSubscriptions } from './connect'

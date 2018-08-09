@@ -13,12 +13,14 @@ overflow: hidden;
 class ActiveSubscriptions extends Component {
 
   render() {
+    const {removeService, services } = this.props
+
     return (
       <Grid doubling relaxed columns={4}>
         { services.map((service) => {
           return (
-            <Grid.Column key={`${service.name}${service.price}${service.interval}`}>
-              <Card centered>
+            <Grid.Column key={service.key}>
+              <Card centered onClick={() => removeService(service.key)}>
                 <Image style={{width: '300px', height:'300px'}} src={require(`../../../${service.picture}`)} />
                   <Card.Content>
                     <Card.Header>{service.name}</Card.Header>

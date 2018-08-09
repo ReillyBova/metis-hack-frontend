@@ -5,7 +5,6 @@ import { theme } from 'assets/theme'
 import styled from 'styled-components'
 import _ from 'lodash'
 import {SearchResults} from './searchResults'
-import services from 'assets/services'
 
 const Background = styled.div`
 background-color: white;
@@ -40,7 +39,7 @@ class BrowserPage extends Component {
 
       this.setState({
         isLoading: false,
-        results: (_.filter(services, isMatch).map((result) => {
+        results: (_.filter(this.props.services, isMatch).map((result) => {
           return (
             { ...result,
               title: result.name,
@@ -53,6 +52,7 @@ class BrowserPage extends Component {
   }
 
   render() {
+    const {addService, services } = this.props
     const { isLoading, value, results } = this.state
     return (
       <Fragment>
@@ -67,11 +67,10 @@ class BrowserPage extends Component {
                   onSearchChange={_.debounce(this.handleSearchChange, 500, { leading: true })}
                   results={results}
                   value={value}
-                  {...this.props}
                 />
             </Grid.Column>
             </Grid>
-            <SearchResults results={(!!results.length) ? results : services } />
+            <SearchResults addService={addService} results={(!!results.length) ? results : services } />
           </ComponentWrapper>
         </Background>
       </Fragment>

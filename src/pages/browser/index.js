@@ -1,1 +1,1 @@
-export { default } from './browser-page'
+export { default } from './connect'

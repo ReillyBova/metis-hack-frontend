@@ -11,13 +11,13 @@ overflow: hidden;
 
 class ActiveSubscriptions extends Component {
   render() {
-    const { results } = this.props
+    const { results, addService } = this.props
     return (
       <Grid doubling relaxed columns={4}>
         { results.map((result) => {
           return (
-            <Grid.Column key={`${result.name}${result.price}${result.interval}`} >
-              <Card centered>
+            <Grid.Column key={result.key} >
+              <Card centered onClick={() => addService(result.key)}>
                 <Image style={{width: '300px', height:'300px'}} src={require(`../../../${result.picture}`)} />
                 <Card.Content>
                   <Card.Header>{result.name}</Card.Header>
