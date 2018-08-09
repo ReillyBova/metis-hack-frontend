@@ -11,7 +11,9 @@ class AboutPage extends Component {
     return (
       <Fragment>
         <PageHeader>{'About'}</PageHeader>
-        A website by Reilly Bova :)
+        <ComponentWrapper>
+          A website by Reilly Bova :)
+        </ComponentWrapper>
       </Fragment>
     )
   }

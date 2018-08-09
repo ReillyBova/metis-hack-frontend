@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { PageHeader, ComponentWrapper } from 'components'
-import { Table, Header, Rating} from 'semantic-ui-react'
+import { Table, Header } from 'semantic-ui-react'
 import { theme } from 'assets/theme'
 import styled from 'styled-components'
 

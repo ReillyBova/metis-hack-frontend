@@ -124,7 +124,7 @@ class Navbar extends Component {
               </NavLink>
             </NavbarLink>
             <NavbarLink>
-              <NavLink to={`${process.env.PUBLIC_URL}/browse`}>{`Add Subscription`}</NavLink>
+              <NavLink to={`${process.env.PUBLIC_URL}/browse`}>{`Add Subscriptions`}</NavLink>
             </NavbarLink>
             <NavbarLink>
               <NavLink to={`${process.env.PUBLIC_URL}/billing`}>{`Billing History`}</NavLink>
