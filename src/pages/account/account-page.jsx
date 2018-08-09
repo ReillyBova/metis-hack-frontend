@@ -1,6 +1,13 @@
 import React, { Component, Fragment } from 'react'
+import { PageHeader, SectionHeader, ComponentWrapper } from 'components'
+import { ActiveSubscriptions } from './activeSubscriptions'
+import { Funds } from './funds'
+import { theme } from 'assets/theme'
 import styled from 'styled-components'
-import { PageHeader, SectionHeader } from 'components'
+
+const Background = styled.div`
+background-color: white;
+`
 
 class AccountPage extends Component {
 
@@ -9,9 +16,15 @@ class AccountPage extends Component {
       <Fragment>
         <PageHeader>{'My Account'}</PageHeader>
         <SectionHeader>{'Active Subscriptions'}</SectionHeader>
-        <p> active subscription viewer</p>
+          <Background>
+            <ComponentWrapper>
+              <ActiveSubscriptions />
+            </ComponentWrapper>
+          </Background>
         <SectionHeader>{'Funds'}</SectionHeader>
-        <p> history</p>
+          <ComponentWrapper>
+            <Funds />
+          </ComponentWrapper>
       </Fragment>
     )
   }

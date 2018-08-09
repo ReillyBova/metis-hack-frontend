@@ -1,12 +1,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
-  background-color: $offWhite;
   margin: 0;
   padding: 0;
   color: #221e20;
-
-
+  background-color: #f2f2f2;
 }
 
 a {

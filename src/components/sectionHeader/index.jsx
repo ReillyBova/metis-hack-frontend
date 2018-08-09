@@ -5,7 +5,7 @@ import { theme } from 'assets/theme'
 const SectionHeaderWrapper = styled.div`
 color: white;
 background-color: ${theme.lavender};
-font-size: 28px;
+font-size: 26px;
 font-weight: 600;
 padding: 12px 16px;
 `

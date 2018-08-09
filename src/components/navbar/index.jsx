@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { logo, logoText } from 'assets/images'
 import { theme } from 'assets/theme'
 import $ from 'jquery';
@@ -25,7 +25,6 @@ transition: height, font-size, 0.5s ease;
   font-size: 18px;
   height: 70px;
 
-
   .navbar-brand-logo {
     width: 38px!important;
   }
@@ -44,7 +43,7 @@ align-items: center;
 
 .navbar-brand-logo {
   width: 88px;
-  padding: 16px;
+  margin: 16px;
 
   transition: width, padding, 0.5s ease;
 }
@@ -80,8 +79,14 @@ const NavbarLink = styled.div`
 margin: 4px 12px;
 border-bottom: 1px solid transparent;
 
+a.active {
+   color: ${theme.purple};
+}
+
 &:hover {
+  cursor: pointer;
   border-bottom: 1px solid ${theme.purple};
+  a { color: ${theme.purple}; }
 }
 `
 
@@ -102,27 +107,33 @@ class Navbar extends Component {
     return (
       <NavbarWrapper>
         <NavbarMain id={'navbarMain'}>
-          <Link to={`${process.env.PUBLIC_URL}/`}>
             <NavbarBrand>
               <img className={'navbar-brand-logo'} alt="" src={logo} />
               <img className={'navbar-brand-text'} alt="" src={logoText} />
             </NavbarBrand>
-          </Link>
           <NavbarLinks>
             <NavbarLink>
-              <Link to={`${process.env.PUBLIC_URL}/account`}>{`My Account`}</Link>
+              <NavLink
+                isActive={(match, location) => {
+                  return ((location.pathname === `${process.env.PUBLIC_URL}/`)
+                          || (location.pathname === `${process.env.PUBLIC_URL}/account`))
+                }}
+                to={`${process.env.PUBLIC_URL}/account`}
+              >
+                {`My Account`}
+              </NavLink>
             </NavbarLink>
             <NavbarLink>
-              <Link to={`${process.env.PUBLIC_URL}/browse`}>{`Add Subscription`}</Link>
+              <NavLink to={`${process.env.PUBLIC_URL}/browse`}>{`Add Subscription`}</NavLink>
             </NavbarLink>
             <NavbarLink>
-              <Link to={`${process.env.PUBLIC_URL}/billing`}>{`Billing History`}</Link>
+              <NavLink to={`${process.env.PUBLIC_URL}/billing`}>{`Billing History`}</NavLink>
             </NavbarLink>
             <NavbarLink>
-            <Link to={`${process.env.PUBLIC_URL}/about`}>{`About`}</Link>
+            <NavLink to={`${process.env.PUBLIC_URL}/about`}>{`About`}</NavLink>
             </NavbarLink>
             <NavbarLink>
-              <Link to={`${process.env.PUBLIC_URL}/logout`}>{`Logout`}</Link>
+              <NavLink to={`${process.env.PUBLIC_URL}/logout`}>{`Logout`}</NavLink>
             </NavbarLink>
           </NavbarLinks>
         </NavbarMain>
