@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-size: 13px !important;
   margin: 0;
   padding: 0;
   color: #221e20;
