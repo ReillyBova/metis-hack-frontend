@@ -108,19 +108,19 @@ class Navbar extends Component {
           </NavbarBrand>
           <NavbarLinks>
             <NavbarLink>
-              <Link to="/account">{`My Account`}</Link>
+              <Link to={`${process.env.PUBLIC_URL}/account`}>{`My Account`}</Link>
             </NavbarLink>
             <NavbarLink>
-              <Link to="/browse">{`Add Subscription`}</Link>
+              <Link to={`${process.env.PUBLIC_URL}/browse`}>{`Add Subscription`}</Link>
             </NavbarLink>
             <NavbarLink>
-              <Link to="/billing">{`Billing History`}</Link>
+              <Link to={`${process.env.PUBLIC_URL}/billing`}>{`Billing History`}</Link>
             </NavbarLink>
             <NavbarLink>
-              <Link to="/about">{`About`}</Link>
+            <Link to={`${process.env.PUBLIC_URL}/about`}>{`About`}</Link>
             </NavbarLink>
             <NavbarLink>
-              <Link to="/logout">{`Logout`}</Link>
+              <Link to={`${process.env.PUBLIC_URL}/logout`}>{`Logout`}</Link>
             </NavbarLink>
           </NavbarLinks>
         </NavbarMain>

@@ -14,11 +14,11 @@ class App extends Component {
         <Navbar />
         <div>
           <Switch>
-            <Route exact path='/' component={AccountPage}/>
-            <Route exact path='/account' component={AccountPage}/>
-            <Route path='/browse' component={SubscriptionBrowserPage}/>
-            <Route path='/billing' component={BillingPage}/>
-            <Route path='/about' component={AboutPage}/>
+            <Route exact path={`${process.env.PUBLIC_URL}/`} component={AccountPage}/>
+            <Route exact path={`${process.env.PUBLIC_URL}/account`} component={AccountPage}/>
+            <Route path={`${process.env.PUBLIC_URL}/browse`}component={SubscriptionBrowserPage}/>
+            <Route path={`${process.env.PUBLIC_URL}/billing`} component={BillingPage}/>
+            <Route path={`${process.env.PUBLIC_URL}/about`} component={AboutPage}/>
           </Switch>
         </div>
       </div>
