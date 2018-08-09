@@ -17,9 +17,9 @@ class ActiveSubscriptions extends Component {
       <Grid doubling relaxed columns={4}>
         { services.map((service) => {
           return (
-            <Grid.Column>
-              <Card>
-                <Image src={require(`../../../${service.picture}`)} />
+            <Grid.Column key={`${service.name}${service.price}${service.interval}`}>
+              <Card centered>
+                <Image style={{width: '300px', height:'300px'}} src={require(`../../../${service.picture}`)} />
                   <Card.Content>
                     <Card.Header>{service.name}</Card.Header>
                     <Card.Meta>
