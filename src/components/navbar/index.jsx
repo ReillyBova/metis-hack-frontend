@@ -7,6 +7,7 @@ import $ from 'jquery';
 
 const NavbarWrapper = styled.header`
 width: 100%;
+min-width: 700px;
 height: 120px;
 position: fixed;
 top: 0;
