@@ -11,7 +11,7 @@ class ActiveSubscriptions extends Component {
         {results.map((result) => {
           const data = result.results[0]
           return (
-          <Grid.Column>
+          <Grid.Column key={data.name}>
             <Card>
               <Image src={data.image} />
               <Card.Content>
