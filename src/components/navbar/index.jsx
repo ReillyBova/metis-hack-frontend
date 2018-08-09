@@ -101,7 +101,7 @@ class Navbar extends Component {
     }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     $(window).scroll(this.scroll_navbar);
   }
   render() {

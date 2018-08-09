@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { Navbar } from 'components'
 import { AboutPage, AccountPage, BillingPage, BrowserPage } from 'pages'
+import $ from 'jquery'
 
 class App extends Component {
+
   render() {
     return (
       <div className='app-wrapper'>

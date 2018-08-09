@@ -1,0 +1,93 @@
+[
+  {
+  	"name": "Netflix - Premium",
+  	"address": "0xBFa069301351179be636a530eD007BA5b22B9a17",
+  	"picture": "assets/images/companies/netflix.jpg",
+  	"interval": "Month",
+    "price": 24.99
+  },
+  {
+  	"name": "Netflix - Premium",
+  	"address": "0xBFa069301351179be636a530eD007BA5b22B9a17",
+  	"picture": "assets/images/companies/netflix.jpg",
+  	"interval": "Year",
+    "price": 119.99
+  },
+  {
+  	"name": "Netflix - Basic",
+  	"address": "0xBFa069301351179be636a530eD007BA5b22B9a17",
+  	"picture": "assets/images/companies/netflix.jpg",
+  	"interval": "Month",
+    "price": 19.99
+  },
+  {
+  	"name": "Netflix - Basic",
+  	"address": "0xBFa069301351179be636a530eD007BA5b22B9a17",
+  	"picture": "assets/images/companies/netflix.jpg",
+  	"interval": "Year",
+    "price": 99.99
+  },
+  {
+  	"name": "Ujo",
+  	"address": "0xdcB300e1AC2FD1119947E928999d7Fa69B509d27",
+  	"picture": "assets/images/companies/ujo.jpg",
+  	"interval": "Day",
+    "price": 0.99
+  },
+  {
+  	"name": "Ujo",
+  	"address": "0xdcB300e1AC2FD1119947E928999d7Fa69B509d27",
+  	"picture": "assets/images/companies/ujo.jpg",
+  	"interval": "Month",
+    "price": 19.99
+  },
+  {
+  	"name": "Ujo",
+  	"address": "0xdcB300e1AC2FD1119947E928999d7Fa69B509d27",
+  	"picture": "assets/images/companies/ujo.jpg",
+  	"interval": "Year",
+    "price": 89.99
+  },
+  {
+  	"name": "BALANC3",
+  	"address": "0xC0935185b086a749284EB161805d39CE2c731618",
+  	"picture": "assets/images/companies/balanc3.jpg",
+  	"interval": "Month",
+    "price": 1000.000
+  },
+  {
+  	"name": "BALANC3",
+  	"address": "0xC0935185b086a749284EB161805d39CE2c731618",
+  	"picture": "assets/images/companies/balanc3.jpg",
+  	"interval": "Year",
+    "price": 10000.000
+  },
+  {
+  	"name": "Amazon Prime - Basic",
+  	"address": "0x59eAd14247b61944d2299A75afbA395c8172EfF8",
+  	"picture": "assets/images/companies/amazon.jpg",
+  	"interval": "Month",
+    "price": 17.99
+  },
+  {
+  	"name": "Amazon Prime - Basic",
+  	"address": "0x59eAd14247b61944d2299A75afbA395c8172EfF8",
+  	"picture": "assets/images/companies/amazon.jpg",
+  	"interval": "Year",
+    "price": 119.99
+  },
+  {
+  	"name": "Amazon Prime - Premium",
+  	"address": "0x59eAd14247b61944d2299A75afbA395c8172EfF8",
+  	"picture": "assets/images/companies/amazon.jpg",
+  	"interval": "Month",
+    "price": 24.99
+  },
+  {
+  	"name": "Amazon Prime - Premiun",
+  	"address": "0x59eAd14247b61944d2299A75afbA395c8172EfF8",
+  	"picture": "assets/images/companies/amazon.jpg",
+  	"interval": "Year",
+    "price": 149.99
+  }
+]
