@@ -14,7 +14,7 @@ class AboutPage extends Component {
         <PageHeader>{'About'}</PageHeader>
         <SectionHeader>{'The Project'}</SectionHeader>
         <ComponentWrapper>
-          <Card style={{width:'100%'}}>
+          <Card centered style={{width:'100%'}}>
             <Card.Content><Header>Motivation</Header></Card.Content>
             <Card.Content style={{fontSize: '18px'}}>
               <p>”Monthly subscriptions are a key monetization channel
